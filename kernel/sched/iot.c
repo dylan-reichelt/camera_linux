@@ -112,9 +112,10 @@ static void enqueue_task_iot(struct rq *rq, struct task_struct *p, int flags)
 
      // FIXME: add the entity to the run queue
      // FIXME: update the bitmap of the priority array
-     // FIXME: set the total number of runnable tasks in struct iot_rq
-     // FIXME: set the total number of runnable tasks in struct rq 
-     
+     // FIXME: set the total number of running tasks in struct iot_rq
+     // FIXME: set the total number of running tasks in struct rq  
+
+    struct iot_rq temp_rq = rq.iot_rq; //Used to get the lot runqueue not sure if using this right
 }
 
 /* [required to implement] Remove task from runqueue */
